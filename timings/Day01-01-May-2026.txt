@@ -1,0 +1,8 @@
+Today is the first day
+what i Learnt 
+
+1 Devops roadmap
+tools and their works
+git setup
+git basics
+linux environment and practice
