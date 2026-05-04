@@ -1,0 +1,185 @@
+# 🐧 Linux Commands for DevOps (Detailed Guide)
+
+This contains essential Linux commands used in real-world DevOps tasks. Each section includes practical commands with explanations.
+
+---
+
+# 📁 1. File & Directory Management
+
+## 🔹 Basic Navigation
+
+```bash
+pwd              # Show current directory
+ls               # List files
+ls -l            # Detailed list (permissions, owner, size)
+ls -a            # Show hidden files
+cd /path         # Change directory
+cd ..            # Move one level up
+```
+
+## 🔹 File Operations
+
+```bash
+touch file.txt          # Create file
+mkdir folder            # Create directory
+rm file.txt             # Delete file
+rm -rf folder           # Delete folder recursively
+cp file1 file2          # Copy file
+mv file1 file2          # Rename/move file
+```
+
+---
+
+# 🔐 2. File Permissions & Ownership
+
+## 🔹 Check Permissions
+
+```bash
+ls -l
+```
+
+## 🔹 Change Permissions
+
+```bash
+chmod 755 file.sh       # Owner full, others read+execute
+chmod +x script.sh      # Make executable
+```
+
+## 🔹 Change Ownership
+
+```bash
+chown user file.txt
+chown user:group file.txt
+```
+
+---
+
+# 👥 3. Users & Groups
+
+## 🔹 User Management
+
+```bash
+useradd devuser
+passwd devuser
+usermod -aG sudo devuser
+```
+
+## 🔹 Group Management
+
+```bash
+groupadd devgroup
+usermod -aG devgroup devuser
+```
+
+## 🔹 Check Users
+
+```bash
+whoami
+id
+cat /etc/passwd
+```
+
+---
+
+# ⚙️ 4. Process Management
+
+## 🔹 View Processes
+
+```bash
+ps aux
+top
+htop
+```
+
+## 🔹 Kill Process
+
+```bash
+kill PID
+kill -9 PID
+```
+
+## 🔹 Background Jobs
+
+```bash
+sleep 100 &
+jobs
+fg %1
+bg %1
+```
+
+---
+
+# 🌐 5. Networking Commands
+
+## 🔹 Check IP & Network
+
+```bash
+ip a
+hostname -I
+```
+
+## 🔹 Connectivity
+
+```bash
+ping google.com
+curl google.com
+wget https://example.com
+```
+
+## 🔹 Ports & Services
+
+```bash
+netstat -tulnp
+ss -tulnp
+```
+
+---
+
+# 📦 6. Package Management
+
+## 🔹 Ubuntu/Debian
+
+```bash
+apt update
+apt upgrade
+apt install nginx
+apt remove nginx
+```
+
+## 🔹 RHEL/CentOS
+
+```bash
+yum install nginx
+dnf install nginx
+```
+
+---
+
+# 🧠 7. Bash Scripting
+
+## 🔹 Simple Script
+
+```bash
+#!/bin/bash
+echo "Hello DevOps"
+```
+
+## 🔹 Run Script
+
+```bash
+chmod +x script.sh
+./script.sh
+```
+
+---
+
+# 💾 8. Disk & Storage
+
+## 🔹 Disk Info
+
+```bash
+df -h              # Disk space
+du -sh *           # Folder size
+lsblk              # List disks
+```
+
