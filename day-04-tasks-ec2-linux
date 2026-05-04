@@ -1,0 +1,62 @@
+# Linux DevOps Hands-on Lab 🚀
+
+## Topics Covered
+
+* User Management
+* Hard Link vs Soft Link
+* Tar & Compression
+* Umask & Permissions
+
+---
+
+## 👤 User Creation
+
+```bash
+sudo useradd devuser
+sudo passwd devuser
+su - devuser
+```
+
+---
+
+## 🔗 Links
+
+```bash
+ln file1.txt hardlink.txt
+ln -s file2.txt softlink.txt
+```
+
+---
+
+## 📦 Tar Commands
+
+```bash
+tar -cvf backup.tar file1.txt file2.txt
+tar -czvf backup.tar.gz lab/
+```
+
+---
+
+## 🔐 Umask
+
+```bash
+umask 027
+```
+
+---
+
+## 📊 Key Learnings
+
+* Hard links share same inode
+* Soft links act as pointer
+* Tar used for backup & transfer
+* Umask controls default permissions
+
+---
+
+## 🎯 Real DevOps Use
+
+* Backup scripts
+* File management in servers
+* Permission control for security
+* CI/CD artifact packaging
