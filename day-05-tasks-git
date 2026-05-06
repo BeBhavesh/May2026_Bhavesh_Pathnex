@@ -1,0 +1,79 @@
+what i learnt today
+
+
+Introduction
+Why Git?
+What Is Git?
+
+    Distributed Architecture
+    Snapshot-Based Version Control
+
+Git vs GitHub – Foundational Clarification
+Installing Git
+What Is a Git Repository?
+Initializing a Repository
+Git Architecture: Core Constructs
+
+    Working Directory
+    Staging Area (Index)
+    What Is a Commit?
+    Local Repository
+    Remote Repository
+
+The Core Workflow
+Demo: Practical Walkthrough
+
+    Stage the File
+    Create the First Commit
+
+Conventional Commits (Modern Standard)
+Configuring Git Identity
+
+    Where Are Git Configuration Values Stored?
+
+Viewing Commit History
+Committing Without -m
+Ignoring Files with .gitignore
+
+    Demo: Creating and Using .gitignore
+
+Branches in Git
+
+    Why Create a Branch?
+    What Is a Branch?
+    Common Branch Naming Conventions
+
+Visualizing Branches
+
+    Creating a Feature Branch
+    Parallel Development
+
+Atomic Development in Git
+Demo: Working with Branches (Commands)
+
+    Step 1: Check Existing Branches
+    Step 2: Create Baseline Commit History
+    Step 3: Create and Switch to a Feature Branch
+    Step 4: Add Work on the Feature Branch
+    Step 5: Switch Back to the Master Branch
+
+Git Merge
+
+    Understanding Branch Divergence
+    Fast-Forward Merge
+    Three-Way Merge (True Merge)
+
+Demo: Merge Scenarios
+
+    Step 6: Perform a Fast-Forward Merge
+    Step 7: Create Branch Divergence
+    Step 8: Perform a Three-Way Merge
+    Visualizing the Commit Graph
+
+Merge Conflicts
+
+    Step 9: Demonstrate a Merge Conflict
+    Resolving the Conflict
+    Inspecting the Graph After Conflict
+    Cleaning Up the Branch
+
