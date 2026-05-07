@@ -1,0 +1,87 @@
+# ☁️ AWS & GitHub Hands-on Tasks
+
+## 📌 Cloud Basics
+- Understand Cloud Computing
+- Difference between Cloud vs On-Premise
+- Benefits of AWS Cloud
+- AWS Global Infrastructure
+- Regions and Availability Zones
+
+---
+
+# 🖥️ EC2 Tasks
+
+## EC2 Launch
+- Launch Linux EC2 Instance
+- Connect using SSH
+- Configure Security Groups
+- Understand Key Pair authentication
+
+## EC2 Practice
+- Install Apache/Nginx
+- Host sample website
+- Run Linux commands
+- Monitor CPU and memory usage
+
+## EC2 Troubleshooting
+- Fix SSH connection issues
+- Resolve website not opening
+- Verify security group ports
+- Check service status
+- Understand inbound and outbound traffic
+
+---
+
+# 🌐 VPC Networking Tasks
+
+## VPC Concepts
+- Create custom VPC
+- Create Public and Private Subnets
+- Configure Route Tables
+- Attach Internet Gateway
+- Configure NAT Gateway
+
+## Security
+- Configure Security Groups
+- Configure NACL rules
+- Understand Stateful vs Stateless
+
+## Networking Practice
+- Public EC2 internet access
+- Private EC2 internet access via NAT
+- Load Balancer traffic flow understanding
+
+---
+
+# 📦 S3 Tasks
+
+## S3 Practice
+- Create S3 bucket
+- Upload objects/files
+- Configure bucket permissions
+- Enable Static Website Hosting
+
+## S3 Concepts
+- Object storage
+- Versioning
+- Lifecycle policies
+- Durability and scalability
+
+---
+
+# 🔐 IAM Tasks
+
+## IAM Practice
+- Create IAM Users
+- Create IAM Groups
+- Attach IAM Policies
+- Configure IAM Roles
+- Enable MFA
+
+## IAM Concepts
+- Authentication vs Authorization
+- Least Privilege Principle
+- AWS Managed Policies
+- Customer Managed Policies
+
+
