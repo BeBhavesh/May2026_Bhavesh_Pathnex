@@ -1,0 +1,322 @@
+# ☁️ AWS Cloud & DevOps Learning Journey 🚀
+
+## 📌 Overview
+This contains my hands-on practice, notes, and learning related to AWS Cloud, Linux, Networking, Git, Security, and DevOps concepts.
+
+The goal of this repository is to build strong fundamentals in:
+- Cloud Computing
+- AWS Services
+- Linux Administration
+- Git & GitHub
+- Networking
+- Security
+- Automation
+- DevOps & SRE Concepts
+
+---
+
+# ☁️ Cloud Computing
+
+## Cloud vs On-Premise
+
+### On-Premise
+- Physical servers managed by company
+- High hardware and maintenance cost
+- Manual scaling
+- Limited flexibility
+
+### Cloud Computing
+- Infrastructure over internet
+- Pay-as-you-go pricing
+- Easy scalability
+- High availability
+- Faster deployment
+
+---
+
+# 🖥️ Amazon EC2 (Elastic Compute Cloud)
+
+## Concepts Covered
+- Launching EC2 instances
+- Linux server management
+- SSH connectivity
+- Key Pairs
+- Security Groups
+- Public vs Private EC2
+
+## Practical Tasks
+- Hosted sample web applications
+- Installed packages and services
+- Monitored CPU and memory
+- Managed Linux processes
+
+## Troubleshooting
+- SSH connection issues
+- Website not opening
+- Security group misconfiguration
+- Route table and subnet verification
+
+---
+
+# 🌐 AWS Networking & VPC
+
+## VPC Components
+- VPC
+- Public Subnet
+- Private Subnet
+- Route Tables
+- Internet Gateway
+- NAT Gateway
+- Security Groups
+- NACL
+
+## Important Concepts
+
+### Route Table
+Controls traffic routing inside VPC.
+
+### Internet Gateway (IGW)
+Provides internet connectivity to public subnets.
+
+### NAT Gateway
+Allows private EC2 instances to access internet securely.
+
+### Security Group
+Stateful firewall at EC2 level.
+
+### NACL
+Stateless firewall at subnet level.
+
+---
+
+# 🔥 Stateful vs Stateless
+
+## Stateful
+- Remembers connection state
+- Example: Security Group
+
+## Stateless
+- Does not remember previous requests
+- Example: NACL
+
+---
+
+# 🌍 Route 53
+
+## DNS Service
+AWS scalable DNS and routing service.
+
+## Features
+- Domain management
+- DNS resolution
+- Health checks
+- Failover routing
+- Latency-based routing
+
+## Health Check Concept
+Route 53 continuously checks endpoint health and redirects traffic to healthy resources automatically.
+
+---
+
+# ⚖️ Load Balancer
+
+## Purpose
+Distributes incoming traffic across multiple servers.
+
+## Benefits
+- High availability
+- Fault tolerance
+- Better scalability
+
+## Types
+- Application Load Balancer (ALB)
+- Network Load Balancer (NLB)
+
+---
+
+# 📈 EC2 Auto Scaling
+
+## Purpose
+Automatically increases or decreases EC2 instances based on traffic.
+
+## Benefits
+- Cost optimization
+- High availability
+- Automatic scaling
+
+## Scaling Types
+- Scale Out
+- Scale In
+
+---
+
+# 📦 Amazon S3
+
+## Object Storage Service
+
+## Features
+- Highly durable storage
+- Static website hosting
+- Backup and recovery
+- Versioning support
+
+## Practical Work
+- Created S3 buckets
+- Uploaded files
+- Enabled static website hosting
+
+---
+
+# 🔐 IAM (Identity and Access Management)
+
+## Components
+- Users
+- Groups
+- Policies
+- Roles
+- MFA
+
+## Important Concepts
+
+### Authentication
+Verifies user identity.
+
+### Authorization
+Determines user permissions.
+
+### Least Privilege Principle
+Provide only minimum required permissions.
+
+---
+
+# ⚡ AWS Lambda
+
+## Serverless Compute Service
+
+## Features
+- No server management
+- Event-driven execution
+- Automatic scaling
+- Pay-per-use pricing
+
+## Common Triggers
+- S3
+- API Gateway
+- CloudWatch Events
+
+---
+
+# 🛠️ AWS Systems Manager (SSM)
+
+## Purpose
+Centralized server and infrastructure management.
+
+## Features
+- Session Manager
+- Run Command
+- Patch Management
+- Parameter Store
+
+## Benefits
+- Manage EC2 without SSH
+- Improved security
+- Automation support
+
+---
+
+# 📜 AWS CloudTrail
+
+## Purpose
+Tracks all AWS API activities.
+
+## Tracks
+- Console logins
+- API calls
+- Resource modifications
+
+## Benefits
+- Security auditing
+- Compliance
+- Incident investigation
+
+---
+
+# 🛡️ AWS Shield
+
+## Purpose
+Protection against DDoS attacks.
+
+## Types
+- Shield Standard
+- Shield Advanced
+
+## Benefits
+- Traffic filtering
+- DDoS mitigation
+- High availability protection
+
+---
+
+# 🔍 AWS GuardDuty
+
+## Threat Detection Service
+
+## Detects
+- Suspicious logins
+- Malware activity
+- Unauthorized API calls
+- Crypto mining behavior
+
+---
+
+# 🔐 Amazon Inspector
+
+## Vulnerability Assessment Service
+
+## Scans
+- EC2 instances
+- Container images
+- Software vulnerabilities
+- Known CVEs
+
+---
+
+# 🚨 DDoS Understanding
+
+## DDoS Attack
+Attackers send massive malicious traffic to exhaust:
+- CPU
+- Memory
+- Bandwidth
+- Database connections
+
+## Protection Mechanisms
+- AWS Shield
+- WAF
+- CDN
+- Rate Limiting
+- Auto Scaling
+
+---
+
+# 🐧 Linux Administration
+
+## Topics Practiced
+- File management
+- User permissions
+- Process management
+- Networking commands
+- Disk usage monitoring
+
+## Commands Used
+```bash
+ls
+cd
+pwd
+top
+htop
+df -h
+free -m
+ps aux
+curl
+wget
