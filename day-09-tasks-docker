@@ -1,0 +1,13 @@
+To summarize today's lerning ,
+
+Virtual Machines and Containers are both used to run applications in isolated environments, but they differ in architecture and performance.
+
+Virtual Machines use separate operating systems for each instance, making them heavier and slower but providing strong isolation.
+
+Containers, on the other hand, share the host operating system kernel, making them lightweight, faster, and more efficient.
+
+Because of their speed, scalability, and portability, containers have become the foundation of modern DevOps, CI/CD, and cloud-native applications using technologies like Docker and Kubernetes.
+
+In modern production environments, companies often use both VMs and Containers together to achieve scalability, flexibility, and efficient resource utilization.
+
+Thank you.
