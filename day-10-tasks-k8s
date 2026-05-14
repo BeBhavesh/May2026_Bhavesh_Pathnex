@@ -1,0 +1,51 @@
+Kubernetes, also known as K8s, is an open-source container orchestration platform used to automate the deployment, scaling, management, and monitoring of containerized applications.
+
+Kubernetes architecture mainly consists of two parts:
+
+Control Plane (Master Node)
+Worker Nodes
+
+The Control Plane manages the entire Kubernetes cluster.
+
+It contains important components such as:
+
+• API Server
+The API Server is the entry point of Kubernetes. All commands and requests go through it.
+
+• ETCD
+ETCD is a key-value database that stores cluster configuration and state information.
+
+• Scheduler
+The Scheduler decides on which worker node a pod should run based on available resources.
+
+• Controller Manager
+It continuously monitors the cluster and ensures the desired state is maintained.
+
+Now coming to Worker Nodes.
+
+Worker Nodes are the machines where actual application containers run.
+
+Each worker node contains:
+
+• Kubelet
+The Kubelet communicates with the control plane and manages pods on the node.
+
+• Container Runtime
+Such as Docker or Containerd, which runs containers.
+
+• Kube Proxy
+It manages networking and communication between services and pods.
+
+Now let’s understand some important Kubernetes objects.
+
+• Pod
+The smallest deployable unit in Kubernetes that contains one or more containers.
+
+• Deployment
+Used to manage application replicas and rolling updates.
+
+• Service
+Provides stable networking and load balancing for pods.
+
+• Namespace
+Used for logical separation of resources inside the cluster.

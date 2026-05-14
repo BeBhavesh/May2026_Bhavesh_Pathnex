@@ -1,0 +1,111 @@
+Good evening everyone,
+
+Today I’m going to explain AWS EKS, which stands for Elastic Kubernetes Service.
+
+EKS is a managed Kubernetes service provided by AWS that helps organizations deploy, manage, and scale containerized applications easily.
+
+Normally, managing Kubernetes clusters manually is complex because we need to handle:
+• Control plane management
+• ETCD maintenance
+• Security patches
+• High availability
+• Kubernetes upgrades
+
+AWS EKS simplifies this by managing the Kubernetes control plane automatically.
+
+This allows DevOps teams to focus more on application deployment instead of infrastructure management.
+
+Now let’s understand the EKS architecture.
+
+AWS EKS mainly consists of:
+
+1. Control Plane
+2. Worker Nodes
+
+The Control Plane is fully managed by AWS and contains:
+• API Server
+• ETCD
+• Scheduler
+• Controller Manager
+
+AWS automatically maintains and secures these components.
+
+Worker Nodes are EC2 instances where application pods actually run.
+
+These worker nodes contain:
+• Kubelet
+• Kube Proxy
+• Container Runtime
+
+Now let’s understand the basic steps to create an EKS cluster.
+
+First, we create IAM roles and networking infrastructure such as VPCs and subnets.
+
+Then we create the EKS cluster using tools like:
+• AWS Console
+• eksctl
+• Terraform
+
+After creating the cluster, we create node groups and configure kubectl access.
+
+Once connected, we can deploy applications inside the cluster.
+
+Now let’s discuss some important EKS components.
+
+CoreDNS is the DNS service inside Kubernetes.
+
+It helps pods communicate using service names instead of IP addresses.
+
+For example, frontend applications can connect to backend services using DNS names.
+
+Another important component is AWS VPC CNI.
+
+CNI stands for Container Network Interface.
+
+The AWS VPC CNI plugin provides networking for Kubernetes pods and assigns VPC IP addresses directly to pods.
+
+This allows native AWS networking and high-performance communication.
+
+Next is External DNS.
+
+External DNS automatically creates and updates Route53 DNS records for Kubernetes services and load balancers.
+
+This simplifies DNS management in production environments.
+
+Now let’s discuss Kubernetes version upgrades in EKS.
+
+AWS supports specific Kubernetes versions, and upgrading is important for:
+• Security patches
+• New features
+• Stability
+• Bug fixes
+
+The upgrade process usually includes:
+
+1. Upgrading the control plane
+2. Upgrading node groups
+3. Upgrading add-ons like CoreDNS, kube-proxy, and VPC CNI
+
+Monitoring is also extremely important in EKS environments.
+
+Tools like:
+• Datadog
+• Prometheus
+• Grafana
+• CloudWatch
+
+are commonly used to monitor:
+• Pods
+• Node health
+• CPU and memory
+• Logs and application metrics
+
+In real-world DevOps workflows, developers push code into Git repositories, CI/CD pipelines build Docker images, images are stored in Amazon ECR, and applications are deployed into EKS clusters.
+
+To conclude,
+
+AWS EKS provides a highly scalable, secure, and production-ready Kubernetes platform that simplifies container orchestration on AWS.
+
+For DevOps engineers, understanding EKS architecture, networking, monitoring, and upgrade strategies is extremely important for managing cloud-native applications efficiently.
+
+Thank you.
