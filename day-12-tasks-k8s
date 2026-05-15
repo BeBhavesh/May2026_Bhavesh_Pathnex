@@ -1,0 +1,98 @@
+Good morning everyone,
+
+Today I’m going to explain some important Kubernetes concepts that are heavily used in real-world DevOps and production environments.
+
+These concepts include:
+• ConfigMaps
+• Secrets
+• Network Policies
+• cgroups
+• RBAC
+• Persistent Volumes
+and other important Kubernetes components.
+
+Let’s start with ConfigMaps.
+
+ConfigMaps are used to store non-sensitive configuration data separately from the application code.
+
+For example:
+• Application URLs
+• Environment variables
+• Port numbers
+• Feature flags
+
+This helps developers update configurations without rebuilding Docker images.
+
+Next are Secrets.
+
+Secrets are used to securely store sensitive information such as:
+• Passwords
+• API keys
+• Access tokens
+• Certificates
+
+Unlike ConfigMaps, Secrets are base64 encoded and help separate sensitive data from application code.
+
+In production environments, Secrets are commonly integrated with external tools such as AWS KMS or HashiCorp Vault for stronger security.
+
+Now let’s discuss Network Policies.
+
+Network Policies act like firewalls inside Kubernetes clusters.
+
+By default, all pods can communicate with each other, which may create security risks.
+
+Network Policies allow organizations to control traffic flow between pods and restrict unauthorized communication.
+
+For example:
+Frontend applications may be allowed to communicate with backend services, but direct access to database pods can be blocked.
+
+Another important concept is cgroups.
+
+cgroups, or Control Groups, are Linux kernel features used for resource management.
+
+Kubernetes uses cgroups to control:
+• CPU usage
+• Memory limits
+• Resource isolation
+
+This prevents one container from consuming excessive resources and affecting other applications.
+
+Namespaces are also important in Kubernetes.
+
+Namespaces help logically separate environments such as:
+• Development
+• Testing
+• Production
+
+This improves organization and access management inside large clusters.
+
+Next is RBAC, which stands for Role-Based Access Control.
+
+RBAC controls who can access and modify Kubernetes resources.
+
+For example:
+Developers may receive read-only access, while administrators receive full cluster permissions.
+
+Persistent Volumes are another critical concept.
+
+Because Kubernetes pods are temporary, Persistent Volumes provide durable storage for applications such as:
+• MySQL
+• MongoDB
+• Kafka
+
+This ensures data remains safe even if pods restart.
+
+Ingress is used for managing external HTTP and HTTPS traffic into Kubernetes clusters.
+
+It provides:
+• Domain-based routing
+• SSL termination
+• Centralized traffic management
+
+In real-world production environments, all these Kubernetes concepts work together to build scalable, secure, and reliable cloud-native applications.
+
+To conclude,
+
+Understanding ConfigMaps, Secrets, Network Policies, cgroups, RBAC, and storage management is extremely important for every DevOps engineer working with Kubernetes in production environments.
+
+Thank you.
